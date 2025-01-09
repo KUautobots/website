@@ -2,10 +2,46 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@layer base {
+    @font-face {
+        font-family: 'Sansation';
+        font-style: normal;
+        font-weight: normal;
+        src: url(../assets/fonts/Sansation_Regular.ttf), format('ttf');    
+    }
+    
+    @font-face {
+        font-family: 'Sansation';
+        font-style: normal;
+        font-weight: bold;
+        src: url(../assets/fonts/Sansation_Bold.ttf) format('ttf');
+    }  
+}
+
 @layer utilities {
     .bg-grid {
       background-image: linear-gradient(90deg, rgba(0, 0, 0, .1) 1px, transparent 1px), linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px);
       background-size: 11vw 11vw;
     }
+/*
+    .landing {
+        background: linear-gradient(215deg, rgba(8, 171, 159, 1), rgba(246, 246, 246, 0.9));
+        height: 100vh;
+        background-size: 400%;
+        animation: waves 5s ease infinite;
+      }
+      
+      @keyframes waves {
+        0% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+      }
+    */ 
   }
   

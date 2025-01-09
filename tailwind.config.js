@@ -2,7 +2,11 @@
 module.exports = {
   content: ['./index.html','./js/script.js'],
   theme: {
-    extend: {},
+    fontFamily: {
+      sans: ['Sansation'],
+    },
+    extend: {}
+    ,
     colors: {
       'kwhite': '#F6F6F6',
       'kblack': '#171717',
